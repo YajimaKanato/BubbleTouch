@@ -70,7 +70,7 @@ public class BubbleSpawner : MonoBehaviour
             currentWeight += bubble.weight;//重みを更新
             if (rand <= currentWeight)
             {//重みの幅に乱数値が含まれた時
-                Instantiate(bubble.prefab, transform.position, Quaternion.identity);
+                Instantiate(bubble.prefab, this.transform.position, Quaternion.identity);
                 //加えた重みを持つ泡のプレハブを生成
                 //座標はスポナーの位置
                 //Quaternion.identityで回転なし
