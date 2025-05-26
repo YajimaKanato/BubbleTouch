@@ -22,9 +22,6 @@ public class BubbleSpawner : MonoBehaviour
     //BubbleData型のリストを作成
     //リストにしたのは種類が増えても対応できるように
 
-    [Header("Spawn Settings")]
-    [Tooltip("生成間隔")]
-    [SerializeField]
     float spawnInterval = 1.0f;
     //スポーン間隔を設定
 
@@ -41,6 +38,7 @@ public class BubbleSpawner : MonoBehaviour
         {
             SpawnRandomPrefab();
             yield return new WaitForSeconds(spawnInterval);
+            spawnInterval = Random.Range(0.5f, 2.0f);
         }
     }
 

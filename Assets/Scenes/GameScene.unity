@@ -506,7 +506,6 @@ MonoBehaviour:
   list:
   - prefab: {fileID: 8737449958258931834, guid: 0e2a90cba283fdf4da6d386d109100cf, type: 3}
     weight: 0.513
-  spawnInterval: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

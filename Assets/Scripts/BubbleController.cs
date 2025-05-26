@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class BubbleController : MonoBehaviour
 {
-    float delta = 0.0f, theta = 0.0f;
+    float delta = 0.0f, theta = 0.0f, speed = 0.0f;
     Vector3 basepos;
     private void Start()
     {
         basepos = transform.position;
+        speed = Random.Range(1.0f, 1.5f);
     }
     void Update()
     {
@@ -16,6 +17,6 @@ public class BubbleController : MonoBehaviour
         {
             theta -= 2 * Mathf.PI;
         }
-        transform.position = basepos + new Vector3(Mathf.Sin(theta), delta);
+        transform.position = basepos + new Vector3(Mathf.Sin(theta) * 0.5f, delta * speed);
     }
 }
