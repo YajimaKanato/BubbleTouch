@@ -22,7 +22,7 @@ public class BubbleSpawner : MonoBehaviour
     //BubbleData型のリストを作成
     //リストにしたのは種類が増えても対応できるように
 
-    float spawnInterval = 1.0f;
+    public float spawnInterval = 1.0f;
     //スポーン間隔を設定
 
     Coroutine spawnCoroutine;//コルーチン
